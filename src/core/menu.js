@@ -1,9 +1,14 @@
 export class Menu {
   constructor(selector) {
-    this.el = document.querySelector(selector)
+    this.menu = document.querySelector(selector)
+
+    document.body.addEventListener('contextmenu', event => {
+      event.preventDefault()
+      this.open()
+    })
 
     document.body.addEventListener('click', event => {
-      if (event.target.offsetParent !== this.el) {
+      if (event.target.offsetParent !== this.menu) {
         this.close()
       }
     })
