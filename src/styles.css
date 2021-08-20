@@ -40,3 +40,9 @@ body {
 .menu .menu-item:hover {
     background: #343434;
 }
+.figure{
+    position: absolute;
+}
+.clipPath {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
