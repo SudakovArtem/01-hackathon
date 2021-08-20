@@ -45,8 +45,6 @@ export class SoundModule extends Module {
 
   play() {
     let n = random(0, this.collection.length - 1);
-    console.log(this.collection.length)
-    console.log(n)
     const audio = this.collection[n];
     audio.play();
   }
