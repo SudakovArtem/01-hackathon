@@ -64,7 +64,8 @@ export class Piano extends Module {
     const instruction = document.createElement('div')
     instruction.innerText = `Вы можете сыграть на данном пианино используя кнопки клавиатуры.
     БЕЛЫЕ : 'Z', 'X', 'C', 'V', 'B', 'N', 'M'.
-    ЧЕРНЫЕ : 'S', 'D', 'G', 'H', 'J'.`
+    ЧЕРНЫЕ : 'S', 'D', 'G', 'H', 'J'.
+    (английская раскладка клавиатуры)`
     instruction.classList.add('instruction')
     document.body.prepend(instruction)
   }
