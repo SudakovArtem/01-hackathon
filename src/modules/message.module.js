@@ -1,5 +1,5 @@
-import { Module } from '../core/module';
-import { random } from '../utils';
+import { Module } from '@/core/module';
+import { random } from '@/utils';
 
 export class MessageModule extends Module {
   #messages;
@@ -53,7 +53,7 @@ export class MessageModule extends Module {
     return this.#messages[random(0, this.#messages.length - 1)];
   }
 
-  #randomColor() {
+  randomColor() {
     const arr = [];
     for (let i = 0; i < 3; i++) {
       arr.push(random(0, 255));
@@ -74,7 +74,7 @@ export class MessageModule extends Module {
     padding: 25px;
     border-radius: 20px;
     font-size: 25px;
-    background-color: rgb(${this.#randomColor()});
+    background-color: rgb(${this.randomColor()});
     `;
     const paragraph = document.createElement('p');
     paragraph.textContent = message.mess;
@@ -88,8 +88,11 @@ export class MessageModule extends Module {
 
   trigger() {
     this.#renderMessage();
+    const message = document.body.querySelector('#message')
     setTimeout(() => {
-      document.body.querySelector('#message').remove();
+      if (message) {
+        message.remove()
+      }
     }, 8000);
   }
 }

@@ -7,6 +7,8 @@ import { FireworksModule } from "./modules/fireworks.module";
 import { CountingClicks } from "./modules/countingСlicks.module";
 import { RandomImage } from "./modules/randomImage.module";
 import { Matrix } from "./modules/matrix.module";
+import {TimerModule} from "@/modules/timer.module";
+import {MessageModule} from "@/modules/message.module";
 
 const menuModules = [
   new SoundModule("sound", "Случайный звук"),
@@ -16,6 +18,8 @@ const menuModules = [
   new CountingClicks("clicks", "Подсчет кликов"),
   new RandomImage("image", "Случайное изображение"),
   new Matrix("matrix", "Войти в JS-Матрицу"),
+  new TimerModule("timer", "Запустить таймер"),
+  new MessageModule("message", "Случайное сообщение")
 ];
 
 const menu = new ContextMenu("#menu");
