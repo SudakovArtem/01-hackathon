@@ -72,20 +72,20 @@ const pianoAudio = [
 ]
 
 const sounds = [
-  'src/audio/sound-1.mp3',
-  'src/audio/sound-2.mp3',
-  'src/audio/sound-3.mp3',
-  'src/audio/sound-4.mp3',
-  'src/audio/sound-5.mp3',
-  'src/audio/sound-6.mp3',
-  'src/audio/sound-7.mp3',
-  'src/audio/sound-8.mp3',
-  'src/audio/sound-9.mp3',
-  'src/audio/sound-10.mp3',
+  './audio/sound-1.mp3',
+  './audio/sound-2.mp3',
+  './audio/sound-3.mp3',
+  './audio/sound-4.mp3',
+  './audio/sound-5.mp3',
+  './audio/sound-6.mp3',
+  './audio/sound-7.mp3',
+  './audio/sound-8.mp3',
+  './audio/sound-9.mp3',
+  './audio/sound-10.mp3',
 ]
 
 const messageBackgrounds = [
-    '#F08080', '#7FFF00', '#FFB6C1', '#FFFF00', '#7FFFD4', '#DA70D6', '#FFDEAD', '#F5F5DC'
+  '#F08080', '#7FFF00', '#FFB6C1', '#FFFF00', '#7FFFD4', '#DA70D6', '#FFDEAD', '#F5F5DC'
 ]
 
 export {messages, pianoKeys, pianoAudio, sounds, messageBackgrounds}
