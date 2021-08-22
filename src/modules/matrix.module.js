@@ -4,10 +4,6 @@ export class Matrix extends Module {
   constructor(type, text) {
     super(type, text);
     this.body = document.querySelector("body");
-    //  this.body.style.margin = `${0}px`;
-    this.body.style.padding = `${0}px`;
-   // this.body.style.backgroundColor = "#000";
-    this.body.style.overflow = "hidden";
   }
 
   trigger() {
@@ -15,6 +11,9 @@ export class Matrix extends Module {
   }
 
   start() {
+    this.body.style.padding = `${0}px`;
+    this.body.style.backgroundColor = "#000";
+    this.body.style.overflow = "hidden";
     const C = document.createElement("canvas");
     this.body.append(C);
     const ctx = C.getContext("2d");
