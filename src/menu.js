@@ -29,7 +29,6 @@ export class ContextMenu extends Menu {
 
   clean() {
     const items = document.querySelectorAll('body > *:not(#menu)')
-    console.log(items)
     items.forEach(item => item.remove())
   }
 
@@ -42,7 +41,9 @@ export class ContextMenu extends Menu {
     const menuItem = module.toHTML()
     menuItem.addEventListener('click', (event) => {
       event.preventDefault()
-      this.clean()
+      if (!module.notClean) {
+        this.clean()
+      }
       module.trigger()
       this.close()
     })

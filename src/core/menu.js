@@ -1,7 +1,10 @@
 export class Menu {
   constructor(selector) {
     this.menu = document.querySelector(selector)
+    this.setListener()
+  }
 
+  setListener() {
     document.body.addEventListener('contextmenu', event => {
       event.preventDefault()
       this.open()
