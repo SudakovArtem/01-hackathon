@@ -1,14 +1,14 @@
 import "./styles.css";
-import { ContextMenu } from "@/menu";
-import { SoundModule } from "@/modules/sound.module";
-import { BackgroundModule } from "./modules/background.module";
-import { ShapeModule } from "./modules/shape.module";
-import { FireworksModule } from "./modules/fireworks.module";
-import { RandomImage } from "./modules/randomImage.module";
-import { Matrix } from "./modules/matrix.module";
+import {ContextMenu} from "@/menu";
+import {SoundModule} from "@/modules/sound.module";
+import {BackgroundModule} from "./modules/background.module";
+import {ShapeModule} from "./modules/shape.module";
+import {FireworksModule} from "./modules/fireworks.module";
+import {RandomImage} from "./modules/randomImage.module";
+import {Matrix} from "./modules/matrix.module";
 import {TimerModule} from "@/modules/timer.module";
 import {MessageModule} from "@/modules/message.module";
-import { Piano } from "./modules/piano.module";
+import {Piano} from "./modules/piano.module";
 import {ClicksModule} from "@/modules/clicks.module";
 
 const menuModules = [
