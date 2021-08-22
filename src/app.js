@@ -7,6 +7,7 @@ import { FireworksModule } from "./modules/fireworks.module";
 import { CountingClicks } from "./modules/countingСlicks.module";
 import { RandomImage } from "./modules/randomImage.module";
 import { Matrix } from "./modules/matrix.module";
+import { Piano } from "./modules/piano.module";
 
 const menuModules = [
   new SoundModule("sound", "Случайный звук"),
@@ -16,6 +17,7 @@ const menuModules = [
   new CountingClicks("clicks", "Подсчет кликов"),
   new RandomImage("image", "Случайное изображение"),
   new Matrix("matrix", "Войти в JS-Матрицу"),
+  new Piano("piano", "Пианино"),
 ];
 
 const menu = new ContextMenu("#menu");
