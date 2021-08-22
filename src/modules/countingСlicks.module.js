@@ -14,6 +14,7 @@ export class CountingClicks extends Module {
   }
 
   startCounter() {
+    this.body.classList.add("noSelect");
     this.clicks = 0;
     const counterClicks = (value) => {
       return (this.counter.textContent = `Количество кликов ${this.clicks++}`);

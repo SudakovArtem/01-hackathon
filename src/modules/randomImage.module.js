@@ -16,6 +16,5 @@ export class RandomImage extends Module {
     const imagePlace = document.createElement("img");
     imagePlace.src = `https://unsplash.it/1200/700?${randomImageIndex}`;
     body.append(imagePlace);
-    setTimeout(() => imagePlace.remove(), 3000);
   }
 }
