@@ -43,7 +43,11 @@ module.exports = (env, argv) => {
     plugins: [
       new CopyWebpackPlugin({
         patterns: [
-          { from: "audio", to: "audio" }
+          { from: "audio", to: "audio" },
+          {
+            from: "*.ico",
+            to: ".",
+          },
         ],
       }),
       new HtmlWebpackPlugin({
